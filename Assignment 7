@@ -15,3 +15,9 @@ rootfs_overlay
 echo “hello_world” > /dev/faulty
 assignments/assignment7/faulty-oops.md
 ./full-test.sh 
+$ git clone git://github.com/martinezjavier/ldd3.git
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+$ export KERNELDIR=/path/to/linux
+$ cd ldd3
+$ make
+ln -s /usr/src/linux-headers-`uname -r`/ linux_source_cdt
