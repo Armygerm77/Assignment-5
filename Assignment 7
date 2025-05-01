@@ -2,3 +2,16 @@ git remote add ldd-base https://github.com/cu-ecen-aeld/ldd3.git
 git fetch ldd-base
 git merge ldd-base/master
 git push origin main
+git fetch buildroot-assignments-base
+git remote add buildroot-assignments-base  https://github.com/cu-ecen-aeld/buildroot-assignments-base.git 
+git merge -X theirs buildroot-assignments-base/assignment7
+git checkout --theirs buildroot-assignment-base/assignment7 -- assignment-autotest
+git commit
+git submodule update --init --recursive
+base_external/package/ldd)
+“S98lddmodules”
+../base_external/rootfs_overlay
+rootfs_overlay
+echo “hello_world” > /dev/faulty
+assignments/assignment7/faulty-oops.md
+./full-test.sh 
