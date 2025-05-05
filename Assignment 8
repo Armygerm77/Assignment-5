@@ -5,3 +5,12 @@ git checkout --theirs aesd-assignments/assignment8 -- assignment-autotest
 git commit
 git submodule update --init --recursive
 /workspaces/Assignment-5/Assignment 8
+git fetch assignments-base
+git remote add assignments-base git@github.com:cu-ecen-aeld/aesd-assignments.git
+git merge -X theirs assignments-base/assignment8
+git checkout --theirs git assignments-base/assignment8 -- assignment-autotest
+git commit
+git submodule update --init --recursive
+/dev/aesdchar
+./full-test.sh
+assignment-<assignment8-complete
