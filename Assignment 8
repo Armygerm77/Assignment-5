@@ -4,3 +4,4 @@ git merge -X theirs buildroot-assignments-base/assignment8
 git checkout --theirs aesd-assignments/assignment8 -- assignment-autotest
 git commit
 git submodule update --init --recursive
+/workspaces/Assignment-5/Assignment 8
